@@ -9,22 +9,9 @@ import {
   signOut,
   signUp,
 } from "@/lib/auth";
-type Provider =
+export type Provider =
   | "google"
-  | "github"
-  | "gitlab"
-  | "bitbucket"
-  | "azure"
-  | "twitter"
-  | "apple"
-  | "slack"
-  | "spotify"
-  | "discord"
-  | "twitch"
-  | "linkedin"
-  | "workos"
-  | "notion"
-  | "keycloak";
+  | "github";
 import { supabase } from "@/lib/supabase";
 
 type AuthContextType = {

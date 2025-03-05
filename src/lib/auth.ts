@@ -15,7 +15,6 @@ export async function signUp(
     options: {
       data: metadata,
       emailRedirectTo: `${window.location.origin}/auth/callback`,
-      authMethod: "otp",
     },
   });
 

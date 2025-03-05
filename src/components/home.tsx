@@ -6,6 +6,8 @@ import FeaturesSection from "./FeaturesSection";
 import TestimonialsSection from "./TestimonialsSection";
 import Footer from "./Footer";
 import { BookOpen, CheckCircle, FileText } from "lucide-react";
+import Feature from "./Feature";
+import { Testimonial } from "./Testimonial";
 
 interface HomePageProps {
   className?: string;
@@ -82,18 +84,10 @@ const HomePage = ({ className = "" }: HomePageProps) => {
         />
 
         {/* Features Section */}
-        <FeaturesSection
-          title="Platform Features"
-          subtitle="Discover the powerful tools that make learning effective and engaging"
-          features={features}
-        />
+        <Feature />
 
         {/* Testimonials Section */}
-        <TestimonialsSection
-          title="What Our Students Say"
-          subtitle="Hear from learners who have transformed their educational journey with Corvus LMS"
-          testimonials={testimonials}
-        />
+        <Testimonial />
 
         {/* Additional Content Section - Call to Action */}
         <section className="w-full py-20 bg-primary/5">
